@@ -8,8 +8,7 @@
     url("BillionDreams_PERSONAL.woff") format("woff");
 } */
 /* @import "../bootstrap/bootstrap.min.css" screen and (min-width: 1025px); */
-html,
-body,
+#fullpage,
 .navbar {
   overflow-y: hidden;
 }
