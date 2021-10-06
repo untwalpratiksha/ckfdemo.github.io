@@ -1,4 +1,14 @@
-#bTitle,
+.imgZoomIn {
+  animation-delay: 10.8s;
+}
+#bTitle {
+  --animate-duration: 1s;
+  animation-delay: 11s;
+}
+
+#bSubTitle {
+  animation-delay: 11.5s;
+}
 #bTitle1 {
   --animate-duration: 1s;
   animation-delay: 0.4s;
@@ -9,9 +19,6 @@
   animation-delay: 0.8s;
 }
 
-#bSubTitle {
-  animation-delay: 2.8s;
-}
 .bannerBtn {
   --animate-duration: 2s;
 }
@@ -23,7 +30,7 @@
 .bfooter1 #no2,
 .bannerfooter #no3 {
   --animate-duration: 3s;
-  animation-delay: 3s;
+  animation-delay: 11.8s;
 }
 /* .bfooter1 #no1 {
   animation-delay: 3s;
