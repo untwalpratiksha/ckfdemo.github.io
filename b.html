@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #000;
+      }
+      .vapoure {
+        position: relative;
+        top: 500px;
+        display: flex;
+        z-index: 1;
+        padding: 0 20px;
+      }
+      .vapoure span {
+        position: relative;
+        /* bottom: 50px; */
+        display: block;
+        margin: 0 2px 50px;
+        min-width: 8px;
+        height: 120px;
+        background: #fff;
+        border-radius: 50%;
+        animation: animate 5s linear infinite;
+        opacity: 0;
+        filter: blur(10px);
+        animation-delay: calc(var(--i) * -0.7s);
+      }
+      @keyframes animate {
+        0% {
+          transform: translateY(0) scaleX(1);
+          opacity: 0;
+        }
+        15% {
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(-150px) scaleX(5);
+        }
+        75% {
+          transform: translateY(-350px) scaleX(5);
+        }
+        85% {
+          transform: translateY(-450px) scaleX(11);
+        }
+        95% {
+          transform: translateY(-550px) scaleX(13);
+        }
+        100% {
+          transform: translateY(-950px) scaleX(16);
+        }
+      }
+      img {
+        position: absolute;
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vapoure">
+      <span style="--i: 8"></span>
+      <span style="--i: 1"></span>
+      <span style="--i: 3"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 7"></span>
+      <span style="--i: 4"></span>
+      <span style="--i: 10"></span>
+      <span style="--i: 5"></span>
+      <span style="--i: 9"></span>
+      <span style="--i: 6"></span>
+
+      <span style="--i: 7"></span>
+      <span style="--i: 4"></span>
+      <span style="--i: 10"></span>
+      <span style="--i: 5"></span>
+      <span style="--i: 9"></span>
+      <span style="--i: 6"></span>
+    </div>
+    <img src="img/FRANCHISEE/cup png.png" alt="chai" />
+  </body>
+</html>

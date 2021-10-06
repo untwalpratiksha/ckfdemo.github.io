@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CKF</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@800&family=Bebas+Neue&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script>
+      function scrollWin() {
+        window.scrollBy(0, 100);
+        // document.getElementsByClassName()
+      }
+      function scrollWin1() {
+        window.scrollTo(0, 0);
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if (
+            $("body").height() <=
+            $(window).height() + $(window).scrollTop()
+          ) {
+            $(".arrowDown").hide();
+          } else {
+            $(".arrowDown").show();
+          }
+        });
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/LOGO.png" alt="CKF"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Other Pages
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbarBoard">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kolhapuriTradition.html"
+                    >Kolhapuri Tradition</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="myStore.html">My Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="myStory.html">My Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="infrastructure.html"
+                    >Infrastructure</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="workTogether.html">Work Together</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <div class="footerLabel">
+                <img src="img/footer/we are.png" alt="Footer" />
+                <img
+                  id="theBiggest"
+                  class="animate__animated animate__heartBeat animate__infinite"
+                  src="img/footer/the biggest.png"
+                  alt="Footer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Banner Start -->
+    <div class="banner6 container-fluid">
+      <div id="bannerText2">
+        <h1 id="bTitle1" class="animate__animated animate__fadeInLeft">
+          <img src="img/Headings/kolhapuri.gif" alt="kolhapuri" />
+        </h1>
+        <h1 id="bSubTitle1" class="animate__animated animate__zoomIn">
+          <img src="img/Headings/TRADITTION.png" alt="TRADITTION" />
+        </h1>
+      </div>
+      <div id="TraditionBanner">
+        <img
+          class="bannerImg1 animate__animated animate__zoomIn"
+          src="img/0190a5_6e9d1dda28e84a64af9894ca3dccd8a5_mv2.gif"
+          alt="CHHOTU"
+        />
+        <img
+          class="bannerImg2 animate__animated animate__zoomIn"
+          src="img/0190a5_6e9d1dda28e84a64af9894ca3dccd8a5_mv2.gif"
+          alt="CHHOTU"
+        />
+        <img
+          class="bannerImg animate__animated animate__zoomIn"
+          src="img/TRADITTION.png"
+          alt="CHHOTU"
+        />
+      </div>
+      <div class="bannerContent">
+        <p>
+          Chhotu Kolhapuri is brainchild of two brothers Sunil Vaishnav and
+          Kapil Vaishnav who belongs from Kolhapur region. With their inherited
+          knowledge of Kolhapuri food and culture they decided to start this
+          business in 2010 in Aurangabad with intension of sharing their culture
+          and food with others.
+        </p>
+        <p>
+          The name “Chhotu Kolhapuri” came from nickname of Kapil Vaishnav,
+          “Chhotu” and “Kolhapuri” to denote their Kolhapuri heritage.
+        </p>
+        <p>
+          You will not find any restaurant across India which do not have Veg
+          Kolhapuri dish in their menu, it is among the top 5 selling dishes in
+          any restaurant that shows the popularity of Kolhapuri food across
+          country.
+        </p>
+        <p>
+          According to both the founders “Kolhapuri food is known for just its
+          spiciness but that is not the case Kolhapuri food is all about
+          choosing correct spices and correct combination of the spices while
+          preparing the Kolhapuri food”. They wanted everyone to know this,
+          hence begins the journey of “Chhotu Kolhapuri”.
+        </p>
+        <p>
+          With their humble start from small store in Aurangabad now Chhotu
+          Kolhapuri is representing Kolhapuri food and culture across country.
+        </p>
+      </div>
+      <div class="arrow bounce arrowDown" onclick="scrollWin();">
+        <span class="material-icons">arrow_circle_down</span>
+      </div>
+      <div class="arrow bounce arrowUp">
+        <span class="material-icons" onclick="scrollWin1();"
+          >arrow_circle_up</span
+        >
+      </div>
+      <div class="footer">
+        <div class="footerLabel">
+          <img src="img/footer/we are.png" alt="Footer" />
+          <img
+            id="theBiggest"
+            class="animate__animated animate__heartBeat animate__infinite"
+            src="img/footer/the biggest.png"
+            alt="Footer"
+          />
+        </div>
+        <div class="footerDetail">
+          <img id="board" src="img/footer/board.jpg" alt="board" />
+          <div class="footerCompanyDetail">
+            <div class="company">
+              <div class="row companyTitle">
+                <div class="col-6">
+                  <h2>Company</h2>
+                  <div class="underline"></div>
+                </div>
+                <div class="col-6">
+                  <img id="companyImg" src="img/footer/LOGO.png" alt="Logo" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <ul>
+                    <li><a href="myStory.html">My Story</a></li>
+                    <li><a href="infrastructure.html">Infrastructure</a></li>
+                    <li><a href="myStore.html">My Store</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li>
+                      <a href="kolhapuriTradition.html">Kolhapuri Tradition</a>
+                    </li>
+                    <li><a href="workTogether.html">Work Together</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="menuFooter">
+              <h2>Menu</h2>
+              <div class="underline"></div>
+              <div class="row">
+                <div class="col-6">
+                  <ul>
+                    <li><a href="index.html#section1">Traditional</a></li>
+                    <li><a href="index.html#section2">Trending</a></li>
+                    <li><a href="index.html#section3">Wrap & Roll</a></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li>
+                      <a href="index.html#section5">Snacks Time</a>
+                    </li>
+                    <li><a href="index.html#section4">Beverages</a></li>
+                    <li><a href="index.html#section6">Desserts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="conversation">
+              <h2>Have Conversation</h2>
+              <div class="underline"></div>
+              <a href="mailto:chhotukolhapuri@gmail.com"
+                >chhotukolhapuri@gmail.com</a
+              >
+            </div>
+            <div class="row headOffice">
+              <div class="address col-8">
+                <h2>Head Office</h2>
+                <div class="underline"></div>
+                <p>
+                  Chhotu Kolhapuri, F1, Garv Apartment, N-1 Cidco, Aurangabad.
+                </p>
+              </div>
+              <div class="socialLinks col-4">
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.115636359172!2d75.36138221491369!3d19.87733848663319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba29326d9aea7%3A0xef64cdd8e8cef110!2sChotu%20kolhapuri%20shop!5e0!3m2!1sen!2sin!4v1633164785427!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

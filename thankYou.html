@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CKF</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      href="//db.onlinewebfonts.com/c/1ffbed7089a941aa728bb970f3ad49f6?family=Futura+Md+BT"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@800&family=Inter:wght@800&family=Bebas+Neue&family=Lobster&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/LOGO.png" alt="CKF"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Other Pages
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbarBoard">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kolhapuriTradition.html"
+                    >Kolhapuri Tradition</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="myStore.html">My Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="myStory.html">My Story</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="infrastructure.html"
+                    >Infrastructure</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="workTogether.html">Work Together</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <div class="footerLabel">
+                <img src="img/footer/we are.png" alt="Footer" />
+                <img
+                  id="theBiggest"
+                  class="animate__animated animate__heartBeat animate__infinite"
+                  src="img/footer/the biggest.png"
+                  alt="Footer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Banner Start -->
+    <div class="banner7 container-fluid">
+      <canvas id="my-canvas"></canvas>
+      <img id="thankYouChhotu" src="img/ThankYou/chhotu.png" alt="chhotu" />
+      <img id="thankYouBorad" src="img/footer/board.jpg" alt="board" />
+      <div id="thankYouContent">
+        <h2 id="firstText">Thank You for your Application</h2>
+        <h2 id="secondText">My team will contact you very soon..</h2>
+        <a href="index.html"
+          ><button onclick="typeWriter()">back to homepage</button></a
+        >
+        <p>Connect</p>
+        <div class="socialLinks1">
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+    <script src="confetti/dist/index.min.js"></script>
+    <script>
+      var confettiSettings = {
+        target: "my-canvas",
+        size: 2,
+        width: window.innerWidth,
+        height: window.innerHeight,
+      };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+    </script>
+    <script>
+      //   var i = 0;
+      //   var j = 0;
+      //   var txt1 =
+      //     "Thank You for your Application My team will contact you very soon..";
+      //   var txt2 = "My team will contact you very soon..";
+
+      //   var speed = 90;
+      //   function typeWriter() {
+      //     if (i < txt1.length) {
+      //       document.getElementById("firstText").innerHTML += txt1.charAt(i);
+      //       i++;
+      //       setTimeout(typeWriter, speed);
+      //     }
+      //   }
+      //   window.onload = function () {
+      //     typeWriter();
+      //   };
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
